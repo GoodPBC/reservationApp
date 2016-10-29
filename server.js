@@ -1,14 +1,18 @@
+/**
+ * Created by juanitasoranno on 10/29/16.
+ */
 var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-var reservations = [];
 
-
-//routes
 
 app.get('/', function (req, res){
-    res.send()
+    app.send("This is loaded.");
 })
+
+app.listen(PORT, function () {
+    console.log('App listening on PORT ' + PORT);
+});
