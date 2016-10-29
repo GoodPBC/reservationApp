@@ -18,5 +18,6 @@
   "homepage": "https://github.com/GoodPBC/reservationApp#readme",
   "dependencies": {
     "body-parser": "^1.15.2"
-  }
+  },
+  "devDependencies": {}
 }
