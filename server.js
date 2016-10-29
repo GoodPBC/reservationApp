@@ -17,7 +17,12 @@ app.use(express.static('public'));
 
 app.get('/', function (req, res){
     app.send("This is loaded.");
-})
+});
+
+app.get('/view', function(req, res){
+    res.sendFile(path.join(__dirname, '/public', 'view.html'));
+    console.log('sent');
+});
 
 app.listen(PORT, function () {
     console.log('App listening on PORT ' + PORT);
