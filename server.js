@@ -21,8 +21,18 @@ app.get('/', function (req, res){
 
 app.get('/view', function(req, res){
     res.sendFile(path.join(__dirname, '/public', 'view.html'));
-    console.log('sent');
+    console.log('sent view');
 });
+
+app.get('/reserve', function(req, res){
+    res.sendFile(path.join(__dirname, '/public', 'makereservation.html'));
+    console.log('sent reserve');
+});
+
+// app.get('/api', function(req, res){
+//     res.sendFile(path.join(__dirname, '/public', 'view.html'));
+//     console.log('sent');
+// });
 
 app.listen(PORT, function () {
     console.log('App listening on PORT ' + PORT);
